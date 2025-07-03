@@ -1,0 +1,2398 @@
+/* Add before the body styles */
+/* SVG Pattern Definitions */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes drawIn {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Base pattern styles */
+.toggle-wrapper {
+  flex: 1 1 calc(100% / 3);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.5s ease;
+}
+
+.toggle-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Individual section patterns */
+.toggle-wrapper:nth-child(1) {
+  background: linear-gradient(135deg, 
+    #FF9A8B 0%, 
+    #FF9A8B 20%, 
+    #FF7B6B 50%, 
+    #FF6B6B 80%, 
+    #FF5F5F 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(1)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L90,10 L90,90 L10,90 Z' fill='none' stroke='%23000' stroke-width='1' stroke-dasharray='10,5' %3E%3C/path%3E%3C/svg%3E");
+  animation: dash 20s linear infinite;
+}
+
+.toggle-wrapper:nth-child(2) {
+  background: linear-gradient(135deg, 
+    #FF6B6B 0%, 
+    #FF7B6B 20%, 
+    #FF8E53 50%, 
+    #FFA053 80%, 
+    #FFB053 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(2)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='20' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: drawIn 3s ease-out infinite;
+}
+
+.toggle-wrapper:nth-child(3) {
+  background: linear-gradient(135deg, 
+    #4ECDC4 0%, 
+    #45D1C4 20%, 
+    #45B7D1 50%, 
+    #45A0D1 80%, 
+    #4593D1 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(3)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,20 Q10,5 20,20 T40,20' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: dash 15s linear infinite reverse;
+}
+
+.toggle-wrapper:nth-child(4) {
+  background: linear-gradient(135deg, 
+    #45B7D1 0%, 
+    #3FA7C1 20%, 
+    #2C7A8E 50%, 
+    #2C5D6F 80%, 
+    #2C3E50 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(4)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20,20 L60,20 L60,60 L20,60 Z' fill='none' stroke='%23FFF' stroke-width='1' stroke-dasharray='5,5'/%3E%3C/svg%3E");
+  animation: drawIn 4s ease-in-out infinite alternate;
+}
+
+.toggle-wrapper:nth-child(5) {
+  background: linear-gradient(135deg, 
+    #96CEB4 0%, 
+    #88CEB4 20%, 
+    #4ECDC4 50%, 
+    #4EBDC4 80%, 
+    #4EADC4 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(5)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='25,5 45,40 5,40' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: dash 25s linear infinite;
+}
+
+.toggle-wrapper:nth-child(6) {
+  background: linear-gradient(135deg, 
+    #FFEEAD 0%, 
+    #FFE4AD 20%, 
+    #FFD47D 50%, 
+    #FFC34D 80%, 
+    #FFB347 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(6)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E");
+  animation: drawIn 2s ease-out infinite;
+}
+
+.toggle-wrapper:nth-child(7) {
+  background: linear-gradient(135deg, 
+    #D4A5A5 0%, 
+    #C49595 20%, 
+    #B48585 50%, 
+    #A47575 80%, 
+    #9B4F4F 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(7)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,35 Q35,10 60,35 T10,35' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: dash 30s linear infinite;
+}
+
+.toggle-wrapper:nth-child(8) {
+  background: linear-gradient(135deg, 
+    #9B9B9B 0%, 
+    #8B8B8B 20%, 
+    #7B7B7B 50%, 
+    #6B6B6B 80%, 
+    #5C5C5C 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(8)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='10' width='20' height='20' fill='none' stroke='%23FFF' stroke-width='1' transform='rotate(45 20 20)'/%3E%3C/svg%3E");
+  animation: drawIn 5s ease-in-out infinite alternate;
+}
+
+.toggle-wrapper:nth-child(9) {
+  background: linear-gradient(135deg, 
+    #FFD93D 0%, 
+    #FFD33D 20%, 
+    #FFBD3D 50%, 
+    #FFAA3D 80%, 
+    #FF9A3D 100%
+  ) !important;
+}
+.toggle-wrapper:nth-child(9)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,10 L50,50 L10,50 Z' fill='none' stroke='%23FFF' stroke-width='1' stroke-dasharray='5,5'/%3E%3C/svg%3E");
+  animation: dash 20s linear infinite reverse;
+}
+
+.toggle-wrapper:nth-child(10) {
+  background: linear-gradient(135deg, #6C5CE7 0%, #4834D4 100%);
+}
+.toggle-wrapper:nth-child(10)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='15' fill='none' stroke='%23FFF' stroke-width='1' stroke-dasharray='20,10'/%3E%3C/svg%3E");
+  animation: drawIn 6s ease-out infinite;
+}
+
+.toggle-wrapper:nth-child(11) {
+  background: linear-gradient(135deg, #A8E6CF 0%, #3EECAC 100%);
+}
+.toggle-wrapper:nth-child(11)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20,40 Q40,20 60,40 T20,40' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: dash 25s linear infinite;
+}
+
+.toggle-wrapper:nth-child(12) {
+  background: linear-gradient(135deg, #FF8B94 0%, #FF2D55 100%);
+}
+.toggle-wrapper:nth-child(12)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,35 L60,35 M35,10 L35,60' stroke='%23FFF' stroke-width='1' stroke-dasharray='8,4'/%3E%3C/svg%3E");
+  animation: drawIn 4s ease-in-out infinite alternate;
+}
+
+.toggle-wrapper:nth-child(13) {
+  background: linear-gradient(135deg, #A3A1FF 0%, #6B5DFF 100%);
+}
+.toggle-wrapper:nth-child(13)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,30 C45,10 75,30 45,60 S15,90 30,60' fill='none' stroke='%23FFF' stroke-width='1'/%3E%3C/svg%3E");
+  animation: dash 30s linear infinite reverse;
+}
+
+.toggle-wrapper:nth-child(14) {
+  background: linear-gradient(135deg, #FFC3A0 0%, #FFAFBD 100%);
+}
+.toggle-wrapper:nth-child(14)::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,25 Q25,10 40,25 T10,25' fill='none' stroke='%23FFF' stroke-width='1' stroke-dasharray='15,5'/%3E%3C/svg%3E");
+  animation: drawIn 5s ease-out infinite;
+}
+
+body {
+  background: #2e394d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  content: "";
+  position: absolute;
+}
+
+input {
+  height: 40px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.toggle-wrapper {
+  flex: 1 1 calc(100% / 3);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 960px) {
+  .toggle-wrapper {
+    flex: 1 1 calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .toggle-wrapper {
+    flex: 1 1 100%;
+  }
+}
+.toggle-wrapper:nth-child(1) {
+  background: #FF9A8B;
+}
+.toggle-wrapper:nth-child(2) {
+  background: #FF6B6B;
+}
+.toggle-wrapper:nth-child(3) {
+  background: #4ECDC4;
+}
+.toggle-wrapper:nth-child(4) {
+  background: #45B7D1;
+}
+.toggle-wrapper:nth-child(5) {
+  background: #96CEB4;
+}
+.toggle-wrapper:nth-child(6) {
+  background: #FFEEAD;
+}
+.toggle-wrapper:nth-child(7) {
+  background: #D4A5A5;
+}
+.toggle-wrapper:nth-child(8) {
+  background: #9B9B9B;
+}
+.toggle-wrapper:nth-child(9) {
+  background: #FFD93D;
+}
+.toggle-wrapper:nth-child(10) {
+  background: #6C5CE7;
+}
+.toggle-wrapper:nth-child(11) {
+  background: #A8E6CF;
+}
+.toggle-wrapper:nth-child(12) {
+  background: #FF8B94;
+}
+.toggle-wrapper:nth-child(13) {
+  background: #A3A1FF;
+}
+.toggle-wrapper:nth-child(14) {
+  background: #FFC3A0;
+}
+.toggle-wrapper:nth-child(7) .toggle {
+  transform: translate(-40px, 40px);
+}
+.toggle-wrapper:nth-child(8) .toggle {
+  transform: translate(-40px, 40px);
+}
+
+.name {
+  position: sticky;
+  top: 1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+  font: 500 14px "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  color: #fff;
+  margin: 0.5rem;
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: slideInName 0.3s ease-out forwards;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+@keyframes slideInName {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+
+label.toggle-item {
+  width: 7em;
+  background: #2e394d;
+  height: 3em;
+  display: inline-block;
+  border-radius: 50px;
+  margin: 40px;
+  position: relative;
+  transition: all 0.3s ease;
+  transform-origin: 20% center;
+  cursor: pointer;
+}
+label.toggle-item:before {
+  display: block;
+  transition: all 0.2s ease;
+  width: 2.3em;
+  height: 2.3em;
+  top: 0.25em;
+  left: 0.25em;
+  border-radius: 2em;
+  border: 2px solid #88cf8f;
+  transition: 0.3s ease;
+}
+
+.normal label {
+  background: #af4c4c;
+  border: 0.5px solid rgba(117, 117, 117, 0.31);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+.normal label:before {
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
+  box-shadow: inset 0.5px -1px 1px rgba(0, 0, 0, 0.35);
+  background: #fff;
+  transform: rotate(-25deg);
+}
+.normal label:after {
+  background: transparent;
+  height: calc(100% + 8px);
+  border-radius: 30px;
+  top: -5px;
+  width: calc(100% + 8px);
+  left: -4px;
+  z-index: 0;
+  box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(151, 151, 151, 0.2);
+}
+
+#normal:checked + label {
+  background: #4caf50;
+}
+#normal:checked + label:before {
+  left: 67px;
+}
+
+.transparent label {
+  background: transparent;
+  border: 3px solid #fff;
+  height: 3.35em;
+}
+.transparent label:before {
+  border: 3px solid #fff;
+  width: 2em;
+  height: 2em;
+  top: 0.3em;
+  left: 0.3em;
+  background: #fff;
+}
+
+#transparent:checked + label:before {
+  transform: translateX(59px);
+}
+
+.checkcross label:before {
+  content: none;
+}
+.checkcross .check {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  background: #8BC34A;
+  transition: 0.4s ease;
+  top: 4.5px;
+  left: 4.5px;
+}
+.checkcross .check:before, .checkcross .check:after {
+  height: 4px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.4s ease;
+}
+.checkcross .check:before {
+  width: 25px;
+  transform: rotate(-45deg) translate(-6px, 20px);
+}
+.checkcross .check:after {
+  width: 10px;
+  transform: rotate(45deg) translate(20px, 11px);
+}
+
+#checkcross:checked + label .check {
+  left: 68px;
+  transform: rotate(360deg);
+  background: #c34a4a;
+}
+#checkcross:checked + label .check:before {
+  width: 27px;
+  transform: rotate(-45deg) translate(-8px, 18px);
+}
+#checkcross:checked + label .check:after {
+  width: 27px;
+  transform: rotate(45deg) translate(18px, 8px);
+}
+
+#gravity:checked + label {
+  transform: rotate(90deg);
+}
+#gravity:checked + label:before {
+  transform: translateX(67px);
+  transition-delay: 0.2s;
+  transition: 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s;
+}
+
+.beer-pong label:before {
+  background: #f9f9f9;
+  box-shadow: inset 0 -3px 0 0 #c6c5c5;
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
+  top: 0.25em;
+  left: 0.25em;
+}
+.beer-pong .cup {
+  top: -3%;
+  right: -118px;
+  border-top: 90px solid #f44336;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 3px;
+  position: absolute;
+  width: 80px;
+  transform-origin: bottom right;
+  transition: 0.2s cubic-bezier(0.42, 0.5, 0.58, 1);
+}
+.beer-pong .cup:before {
+  box-shadow: 0 -10px 0 0px rgba(39, 39, 39, 0.1), 0px -20px 0 0px rgba(39, 39, 39, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(39, 39, 39, 0.1);
+  width: 120%;
+  left: -5px;
+  height: 4px;
+  top: -40px;
+}
+.beer-pong .cup .lid {
+  position: absolute;
+  width: 95px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efefef;
+  bottom: 86px;
+  left: -23px;
+}
+.beer-pong .cup .lid:after {
+  background: #efefef;
+  width: 48px;
+  height: 5px;
+  left: 50%;
+  margin-left: -24px;
+  top: 94px;
+  border-radius: 0 0 3px 3px;
+}
+
+#beer-pong:checked ~ .cup {
+  animation: 0.2s linear cup 1s forwards;
+}
+#beer-pong:checked + label:before {
+  animation: 2s linear bounce-off forwards;
+}
+
+@keyframes cup {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(75deg) translate(10px, 15px);
+  }
+  90% {
+    transform: rotate(70deg) translate(10px, 15px);
+  }
+  100% {
+    transform: rotate(75deg) translate(10px, 15px);
+  }
+}
+@keyframes bounce-off {
+  0% {
+    transform: translateY(0);
+  }
+  10%, 25% {
+    transform: translate(-20px, -80px);
+  }
+  50% {
+    transform: rotate(163deg);
+    transform-origin: 100px -12px;
+  }
+  70% {
+    transform: rotate(0) translate(-3px, -8px);
+    transform-origin: 100px -12px;
+  }
+  75% {
+    transform: translate(20px, -8px);
+  }
+  80% {
+    transform: translate(30px, 0px);
+  }
+  85% {
+    transform: translate(40px, -3px);
+  }
+  87% {
+    transform: translate(46px, 0px);
+  }
+  90% {
+    transform: translate(52px, -1px);
+  }
+  95% {
+    transform: translate(60px, 0px);
+  }
+  100% {
+    transform: translate(64px, 0px);
+  }
+}
+
+.dog-rollover label .eyes {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #222;
+  border-radius: 50%;
+  transform: translate(8px, 14px);
+  box-shadow: 16px 0 0 #222, 22px -4px 0 12px #e4ac04;
+}
+.dog-rollover label .ear {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  left: -4px;
+  bottom: 80%;
+  background: #f9bb00;
+  margin-bottom: -5px;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  box-shadow: inset 4px 0 0 0px #ffffff, inset -4px 0 0 0px #ffffff;
+  transform: rotate(-40deg);
+}
+.dog-rollover label .ear.right {
+  transform: rotate(60deg) scaleX(-1);
+  left: auto;
+  transform-origin: center bottom;
+  transition: 0.4s ease-in-out;
+  right: 0px;
+}
+.dog-rollover label .face {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  background: #fff;
+  z-index: 8;
+}
+.dog-rollover label .mouth {
+  position: absolute;
+  background: #222;
+  width: 14px;
+  height: 7px;
+  left: 50%;
+  margin-left: -7px;
+  bottom: 12px;
+  border-radius: 2px 2px 20px 20px;
+  bottom: 8px;
+  transform: scale(0);
+  transition: 0.1s ease;
+}
+.dog-rollover label .mouth:before {
+  width: 8px;
+  height: 8px;
+  background: #ec788d;
+  border-radius: 0 0 50% 50%;
+  transform: translate(3px, 5px);
+}
+.dog-rollover label:before {
+  border-color: white;
+  background: white;
+}
+
+#doggo:checked ~ .cup {
+  animation: 0.2s linear cup 1s forwards;
+}
+#doggo:checked + label .dog {
+  left: 68px;
+  transform: rotate(360deg);
+}
+#doggo:checked + label .mouth {
+  transform: scale(1);
+  transition-delay: 0.7s;
+}
+#doggo:checked + label .ear.right {
+  transform: scaleX(-1) rotate(-35deg);
+  transition-delay: 0.6s;
+}
+
+
+
+.basketball-hoop label {
+  background: #fdb827;
+}
+.basketball-hoop label:before {
+  content: none;
+}
+.basketball-hoop .ball {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  background: #FF9800;
+  border: 2px solid black;
+  transition: 0.4s ease;
+  top: 4px;
+  left: 4px;
+  background-image: radial-gradient(circle at -5px 10px, transparent 15px, black 15px, black 17px, transparent 17px), radial-gradient(circle at 41px 25px, transparent 15px, black 15px, black 17px, transparent 17px), linear-gradient(110deg, transparent 22px, black 22px, black 24px, transparent 24px), linear-gradient(18deg, transparent 22px, black 22px, black 24px, transparent 24px);
+}
+.basketball-hoop .ball__wrapper {
+  transition: 0.4s ease;
+  width: 195%;
+  height: 200%;
+  transform-origin: 50% -2%;
+}
+.basketball-hoop .hoop {
+  top: -50px;
+  right: -84px;
+  width: 50px;
+  background: #f44336;
+  height: 8px;
+  position: absolute;
+}
+.basketball-hoop .hoop:before {
+  position: absolute;
+  right: -4px;
+  width: 7px;
+  height: 60px;
+  background: #cd2e22;
+  top: -40px;
+}
+.basketball-hoop .hoop:after {
+  width: 40px;
+  height: 35px;
+  background: repeating-linear-gradient(45deg, transparent, transparent 13px, white 13px, white 15px), repeating-linear-gradient(-45deg, transparent, transparent 13px, white 13px, white 15px);
+  top: 8px;
+  border-radius: 0 0 20% 20%/40% 40% 60% 60%;
+  border: 2px solid #fff;
+  border-width: 0 2px;
+  left: 2px;
+  z-index: 20;
+}
+
+#hoop:checked + label {
+  background: #542583;
+  transition-delay: 1.35s;
+}
+#hoop:checked + label .ball__wrapper {
+  animation: 1.5s linear ball-wrapper forwards;
+}
+#hoop:checked + label .ball {
+  animation: 1.5s linear ball forwards;
+}
+
+@keyframes ball {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: rotate(-150deg);
+  }
+  48% {
+    transform: rotate(-150deg) translateY(92px);
+  }
+  52% {
+    transform: rotate(-150deg) translate(-10px, 80px);
+  }
+  56% {
+    transform: rotate(-150deg) translate(-25px, 91px);
+  }
+  60% {
+    transform: rotate(-150deg) translate(-35px, 86px);
+  }
+  65% {
+    transform: rotate(-150deg) translate(-45px, 91px);
+  }
+  70% {
+    transform: rotate(-150deg) translate(-50px, 87px);
+  }
+  75% {
+    transform: rotate(-150deg) translate(-60px, 91px);
+  }
+  80% {
+    transform: rotate(-150deg) translate(-65px, 88px);
+  }
+  85% {
+    transform: rotate(-150deg) translate(-70px, 91px);
+  }
+  90% {
+    transform: rotate(-150deg) translate(-75px, 90px);
+  }
+  95% {
+    transform: rotate(-150deg) translate(-80px, 90px);
+  }
+  100% {
+    transform: rotate(-150deg) translate(-82px, 91px);
+  }
+}
+@keyframes ball-wrapper {
+  0% {
+    transform: none;
+  }
+  40%, 100% {
+    transform: rotate(150deg);
+  }
+}
+.pancake-stack label:before {
+  content: none;
+}
+.pancake-stack .pancakes {
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.pancake-stack .pancake {
+  background: #e27c31;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  transition: 0.4s ease;
+  top: 2px;
+  left: 4px;
+  box-shadow: 0 2px 0 2px #fbbe7c;
+}
+.pancake-stack .pancake:nth-child(2) {
+  left: 0;
+  top: -3px;
+  transform: scale(0);
+  transition: 0.2s ease 0.2s;
+}
+.pancake-stack .pancake:nth-child(3) {
+  top: -8px;
+  transform: scale(0);
+  transition: 0.2s ease 0.2s;
+}
+.pancake-stack .pancake:nth-child(3):before, .pancake-stack .pancake:nth-child(3):after {
+  background: #ef8927;
+  border-radius: 20px;
+  width: 50%;
+  height: 20%;
+}
+.pancake-stack .pancake:nth-child(3):before {
+  top: 20px;
+  left: 5px;
+}
+.pancake-stack .pancake:nth-child(3):after {
+  top: 22px;
+  right: 5px;
+}
+.pancake-stack .butter {
+  width: 12px;
+  height: 11px;
+  background: #fbdb60;
+  top: 6px;
+  left: 20px;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 1px #d67823;
+  transform: scale(0);
+  transition: 0.2s ease;
+}
+
+#pancake:checked + label .pancakes {
+  transform: translateX(70px);
+}
+#pancake:checked + label .pancake:nth-child(2) {
+  transform: scale(1);
+  transition-delay: 0.2s;
+}
+#pancake:checked + label .pancake:nth-child(3) {
+  transform: scale(1);
+  transition-delay: 0.4s;
+}
+#pancake:checked + label .butter {
+  transform: scale(1);
+  transition-delay: 0.6s;
+}
+
+
+
+/* 🎨 Background colors for new toggles */
+.toggle-wrapper:nth-child(9) {
+  background: #f9d976; /* Light Bulb - soft yellow */
+}
+.toggle-wrapper:nth-child(10) {
+  background: #6dd5ed; /* Wave Switch - aqua blue */
+}
+.toggle-wrapper:nth-child(11) {
+  background: #ff9a9e; /* Car Slide - warm red/pink */
+}
+
+/* 🌟 Light Bulb Toggle */
+.light-bulb label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c3e50;
+}
+
+.light-bulb label:before {
+  content: none;
+}
+
+.light-bulb .bulb {
+  width: 24px;
+  height: 32px;
+  background: #f4f4f4;
+  border-radius: 50% 50% 45% 45%;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 
+    inset 0 0 2px rgba(0,0,0,0.2),
+    inset 0 0 15px rgba(0,0,0,0.1),
+    0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Filament */
+.light-bulb .bulb::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+}
+
+/* Base */
+.light-bulb .bulb::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  background: #d4d4d4;
+  border-radius: 2px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 
+    0 2px 0 #bbb,
+    0 4px 0 #999;
+}
+
+.light-bulb .glow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 150, 0.8) 0%,
+    rgba(255, 255, 100, 0.3) 50%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  filter: blur(5px);
+}
+
+/* Active States */
+#lightbulb:checked + label .bulb {
+  background: #fff9c4;
+  box-shadow: 
+    inset 0 0 2px rgba(255,255,200,0.2),
+    inset 0 0 15px rgba(255,255,150,0.4),
+    0 0 15px rgba(255,255,100,0.3),
+    0 0 30px rgba(255,255,50,0.2);
+  transform: translate(60px, -50%);
+}
+
+#lightbulb:checked + label .glow {
+  opacity: 1;
+  transform: translate(60px, -50%);
+  animation: bulbGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes bulbGlow {
+  from {
+    filter: blur(5px) brightness(1);
+  }
+  to {
+    filter: blur(7px) brightness(1.2);
+  }
+}
+
+/* 🌊 Wave Switch */
+.wave-switch label:before {
+  content: none;
+}
+.wave-switch .wave {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #52e71b 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  border-radius: 50px;
+  transition: background-position 0.5s ease;
+}
+.wave-switch .bubble {
+  width: 2em;
+  height: 2em;
+  background: #b924b9;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  transition: transform 0.5s ease;
+}
+#wave:checked + label .wave {
+  background-position: left;
+}
+#wave:checked + label .bubble {
+  transform: translateX(60px);
+}
+
+/* 🚗 Car Slide */
+.car-slide label:before {
+  content: none;
+}
+.car-slide .road {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #444;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+.car-slide .car {
+  width: 2em;
+  height: 1.2em;
+  background: red;
+  border-radius: 4px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 2px 0 #222;
+}
+.car-slide .car:before,
+.car-slide .car:after {
+  content: '';
+  position: absolute;
+  bottom: -0.4em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #000;
+  border-radius: 50%;
+}
+.car-slide .car:before {
+  left: 3px;
+}
+.car-slide .car:after {
+  right: 3px;
+}
+#car:checked + label .car {
+  transform: translateX(60px);
+}
+
+/* 🌌 Rocket Toggle Background */
+.toggle-wrapper.rocket-toggle {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* 🚀 Rocket Shape */
+.rocket-launch label {
+  background: #333;
+  border-radius: 100px;
+  position: relative;
+  height: 40px;
+  width: 80px;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.rocket-launch .rocket {
+  width: 20px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px 10px 4px 4px;
+  box-shadow: inset 0 0 0 2px #444;
+  transition: transform 1.6s ease-in-out;
+  z-index: 10;
+}
+
+.rocket-launch .rocket:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* 🚀 Animation Triggered */
+#rocket:checked + label .rocket {
+  animation: rocket-arc 1.6s ease-in-out forwards;
+}
+
+#rocket:checked + label .rocket:before {
+  opacity: 1;
+}
+
+/* 🚀 Arc Flight Animation */
+@keyframes rocket-arc {
+  0% {
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  30% {
+    top: -80px;
+    left: 20px;
+    transform: rotate(30deg);
+  }
+  60% {
+    top: -80px;
+    left: 50px;
+    transform: rotate(60deg);
+  }
+  100% {
+    top: 0px;
+    left: 60px;
+    transform: rotate(90deg);
+  }
+}
+
+/* 🎵 Music Vibes Toggle */
+.music label:before {
+  content: none;
+}
+.music .wave {
+  position: absolute;
+  bottom: 10px;
+  width: 4px;
+  border-radius: 3px;
+  background: #fff;
+  animation: none;
+  transition: height 0.3s ease;
+}
+.wave1 {
+  left: 10px;
+  height: 12px;
+}
+.wave2 {
+  left: 18px;
+  height: 18px;
+}
+.wave3 {
+  left: 26px;
+  height: 14px;
+}
+#music:checked + label .wave1 {
+  height: 20px;
+  animation: musicWave 0.5s infinite alternate;
+}
+#music:checked + label .wave2 {
+  height: 25px;
+  animation: musicWave 0.5s 0.1s infinite alternate;
+}
+#music:checked + label .wave3 {
+  height: 22px;
+  animation: musicWave 0.5s 0.2s infinite alternate;
+}
+
+@keyframes musicWave {
+  0% { transform: scaleY(1); }
+  100% { transform: scaleY(1.6); }
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: #1f1f1f;
+}
+
+.social-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.social-btn.github {
+  background-color: #333;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-btn.kaggle {
+  background-color: #20beff;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* ===================== */
+/* 🎨 UI Enhancements */
+/* ===================== */
+
+/* Add background colours for the additional toggles */
+.toggle-wrapper.music-toggle {
+  background: #a17fe0; /* soft purple */
+}
+
+.toggle-wrapper.brain-toggle {
+  background: #ffa86b; /* warm orange */
+}
+
+/* 🧠 Brain Spark Animation */
+@keyframes brainPulse {
+  from {
+    transform: scale(1) rotate(0);
+  }
+  to {
+    transform: scale(1.35) rotate(15deg);
+  }
+}
+
+#brain:checked + label .brain-spark {
+  animation: brainPulse 0.6s infinite alternate;
+  color: #ffeb3b;
+}
+
+/* ===================== */
+/* ✨  Enhanced Light Bulb */
+/* ===================== */
+
+/* Flicker keyframes */
+@keyframes bulbFlicker {
+  0%, 100% { opacity: 0.6; transform: scale(0.95); }
+  20% { opacity: 1; transform: scale(1); }
+  40% { opacity: 0.8; transform: scale(0.98); }
+  60% { opacity: 1; transform: scale(1); }
+  80% { opacity: 0.9; }
+}
+
+/* Bulb lit state */
+#lightbulb:checked + label .bulb {
+  background: #fff9b9;
+  box-shadow: 0 0 10px 2px #fff8c9, 0 0 20px 4px #ffe14f;
+}
+
+#lightbulb:checked + label .glow {
+  opacity: 1;
+  animation: bulbFlicker 1.2s infinite ease-in-out;
+}
+
+/* ===================== */
+/* 🚀  Rocket Improvements */
+/* ===================== */
+
+@keyframes flameFlicker {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.3) translateY(2px); }
+}
+
+@keyframes rocketFlight {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  30%  { transform: translate(10px, -90px) rotate(20deg); }
+  60%  { transform: translate(35px, -180px) rotate(40deg); }
+  100% { transform: translate(70px, 0)  rotate(90deg); }
+}
+
+/* Override previous rocket animation */
+#rocket:checked + label .rocket {
+  animation: rocketFlight 1.8s ease-in-out forwards;
+}
+
+#rocket:checked + label .rocket:before {
+  opacity: 1;
+  animation: flameFlicker 0.25s infinite;
+  background: radial-gradient(circle at 50% 0%, #fff 0%, #ff9800 60%, #ff5722 100%);
+}
+
+/* ===================== */
+/* 🦖  T-Rex Chomp Toggle */
+/* ===================== */
+
+.brain .trex-head {
+  width: 2.8em;
+  height: 2em;
+  background: #6eb44f;
+  border-radius: 60% 10% 50% 50% / 60% 0 60% 60%;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  transform: translateX(-120%);
+  transition: transform 0.5s ease;
+  z-index: 5;
+}
+
+/* Eye */
+.brain .trex-head::after {
+  content: '';
+  position: absolute;
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background: #000;
+  top: 0.5em;
+  left: 1.8em;
+}
+
+/* Jaw */
+.brain .trex-head::before {
+  content: '';
+  position: absolute;
+  width: 1.5em;
+  height: 0.7em;
+  background: #6eb44f;
+  bottom: -0.4em;
+  left: 0.4em;
+  border-radius: 0 0 0.8em 0.8em;
+  transform-origin: top left;
+  transition: transform 0.35s ease;
+}
+
+/* Snarl bubble */
+.brain .snarl {
+  position: absolute;
+  left: calc(100% + 4px);
+  top: 0;
+  background: #fff;
+  color: #000;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#brain:checked + label .trex-head {
+  transform: translateX(0);
+}
+
+#brain:checked + label .trex-head::before {
+  transform: rotate(-25deg) translate(-2px, 2px);
+}
+
+#brain:checked + label .snarl {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.4s;
+}
+
+/* Neutralise legacy brain electricity */
+.brain .brain-spark { display: none; }
+#brain:checked + label .brain-spark { display: none; animation: none; }
+
+/* Remove old toggle backgrounds */
+.toggle-wrapper.rocket-toggle,
+.toggle-wrapper.music-toggle,
+.toggle-wrapper.brain-toggle {
+  display: none;
+}
+
+/* ===================== */
+/* 🎨 Paint Brush Toggle */
+/* ===================== */
+
+/* Remove paint brush styles */
+.paint-toggle,
+.paint .track,
+.paint .brush,
+.paint .bristles,
+.paint .drip {
+  display: none;
+}
+
+/* ===================== */
+/* ✈️ Paper Airplane Toggle */
+/* ===================== */
+
+/* Remove airplane styles */
+.airplane-toggle,
+.airplane .flight-path,
+.airplane .plane-wrapper,
+.airplane .paper-plane,
+.airplane .wing-left,
+.airplane .wing-right {
+  display: none;
+}
+
+/* ===================== */
+/* 🎯 Slinky Toggle */
+/* ===================== */
+
+.slinky-toggle {
+  background: linear-gradient(135deg, 
+    #FF61D8 0%, 
+    #FF61D8 20%, 
+    #9B6BFF 50%, 
+    #6B5DFF 80%, 
+    #6B5DFF 100%
+  ) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.slinky-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.slinky-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.slinky-body {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transform-origin: center center;
+  transform: translate(5px, -50%) scaleX(1);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slinky-body .coil {
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(to right, #eb8f83, #ef0d0d);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Refined Tumble Animation */
+@keyframes tumbleForward {
+  0% {
+    transform: translate(5px, -50%) scaleX(1) rotate(0deg);
+  }
+  20% {
+    transform: translate(20px, -50%) scaleX(0.7) rotate(180deg);
+  }
+  40% {
+    transform: translate(35px, -50%) scaleX(1.2) rotate(360deg);
+  }
+  60% {
+    transform: translate(50px, -50%) scaleX(0.8) rotate(540deg);
+  }
+  80% {
+    transform: translate(65px, -50%) scaleX(1.1) rotate(680deg);
+  }
+  100% {
+    transform: translate(70px, -50%) scaleX(1) rotate(720deg);
+  }
+}
+
+@keyframes tumbleBack {
+  0% {
+    transform: translate(70px, -50%) scaleX(1) rotate(720deg);
+  }
+  20% {
+    transform: translate(55px, -50%) scaleX(1.1) rotate(540deg);
+  }
+  40% {
+    transform: translate(40px, -50%) scaleX(0.8) rotate(360deg);
+  }
+  60% {
+    transform: translate(25px, -50%) scaleX(1.2) rotate(180deg);
+  }
+  80% {
+    transform: translate(10px, -50%) scaleX(0.9) rotate(90deg);
+  }
+  100% {
+    transform: translate(5px, -50%) scaleX(1) rotate(0deg);
+  }
+}
+
+/* Coil stretch animation with better easing */
+@keyframes coilStretch {
+  0% { 
+    transform: scaleY(1);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  50% { 
+    transform: scaleY(1.3);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  100% { 
+    transform: scaleY(1);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+}
+
+/* Toggle States with enhanced easing */
+#slinky:checked + label .slinky-body {
+  animation: tumbleForward 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+#slinky:checked + label .coil {
+  animation: coilStretch 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+#slinky:not(:checked) + label .slinky-body {
+  animation: tumbleBack 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+/* Idle breathing with smooth easing */
+@keyframes gentleBreathe {
+  0%, 100% { 
+    transform: translate(5px, -50%) scaleY(1);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  50% { 
+    transform: translate(5px, -50%) scaleY(1.05);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+}
+
+.slinky-body:not(:animated) {
+  animation: gentleBreathe 2s ease-in-out infinite;
+}
+
+/* ===================== */
+/* 🛹 Skater Toggle */
+/* ===================== */
+
+.skater-toggle {
+  background: linear-gradient(135deg, 
+    #8eaecf 0%, 
+    #7e9ebf 20%, 
+    #6e8eaf 50%, 
+    #5e7e9f 80%, 
+    #4e6e8f 100%
+  ) !important;
+}
+
+.skater-rail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove the middle line */
+.skater-rail .rail {
+  display: none;
+}
+
+.skater-rail .skater {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skater-rail .board {
+  width: 40px;
+  height: 8px;
+  background: linear-gradient(90deg, #f4a460, #d2691e);
+  border-radius: 4px;
+  position: absolute;
+  bottom: -4px;
+  left: -5px;
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.skater-rail .board::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgba(0,0,0,0.2);
+  top: 3px;
+  border-radius: 1px;
+}
+
+/* Enhanced kickflip animation */
+@keyframes skaterKickflip {
+  0% { 
+    transform: translate(0, -50%); 
+  }
+  20% { 
+    transform: translate(15px, -80%) rotate(90deg); 
+  }
+  40% { 
+    transform: translate(30px, -100%) rotate(180deg); 
+  }
+  60% { 
+    transform: translate(45px, -80%) rotate(270deg); 
+  }
+  80% { 
+    transform: translate(55px, -60%) rotate(360deg); 
+  }
+  100% { 
+    transform: translate(60px, -50%) rotate(360deg); 
+  }
+}
+
+@keyframes boardFlip {
+  0% { 
+    transform: rotate(0) translateY(0); 
+  }
+  25% { 
+    transform: rotate(360deg) translateY(-15px); 
+  }
+  50% { 
+    transform: rotate(720deg) translateY(-20px); 
+  }
+  75% { 
+    transform: rotate(1080deg) translateY(-15px); 
+  }
+  100% { 
+    transform: rotate(1440deg) translateY(0); 
+  }
+}
+
+#skater:checked + label .skater {
+  animation: skaterKickflip 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+#skater:checked + label .board {
+  animation: boardFlip 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+/* Add trick trail effect */
+.skater-rail .skater::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#skater:checked + label .skater::after {
+  transform: scale(2);
+  opacity: 1;
+  animation: fadeTrail 1.2s ease-out;
+}
+
+@keyframes fadeTrail {
+  0% { 
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+/* ===================== */
+/* 💃 Emoji Parade Toggle */
+/* ===================== */
+
+.parade-toggle {
+  background: linear-gradient(135deg, 
+    #f4db77 0%, 
+    #f4c577 20%, 
+    #f4ae77 50%, 
+    #f49677 80%, 
+    #f47777 100%
+  ) !important;
+}
+
+.parade .emoji-line {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.parade .emoji {
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(10px) rotate(0deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Improved staggered animations for emoji */
+.parade .emoji.cool { 
+  transition-delay: 0s;
+  transform-origin: bottom center;
+}
+.parade .emoji.dancer { 
+  transition-delay: 0.15s;
+  transform-origin: bottom center;
+}
+.parade .emoji.groove { 
+  transition-delay: 0.3s;
+  transform-origin: bottom center;
+}
+
+#parade:checked + label .emoji-line {
+  transform: translate(45px, -50%);
+}
+
+#parade:checked + label .emoji {
+  opacity: 1;
+  transform: translateY(0) rotate(360deg);
+  animation: danceMoves 1.5s ease-in-out infinite;
+}
+
+@keyframes danceMoves {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-5px) rotate(-15deg); 
+  }
+  50% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  75% { 
+    transform: translateY(-5px) rotate(15deg); 
+  }
+}
+
+/* Add hover effects to all sections */
+.toggle-wrapper:hover::before {
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+}
+
+/* Remove green circle from slinky spring */
+.slinky-body::before {
+  display: none;
+}
+
+/* Enhance Car Slide with smoke effect */
+.car-slide .smoke {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(200, 200, 200, 0.6);
+  border-radius: 50%;
+  top: 50%;
+  left: 10px;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.car-slide .smoke::before,
+.car-slide .smoke::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 50%;
+  top: 2px;
+}
+
+.car-slide .smoke::before { left: -5px; }
+.car-slide .smoke::after { left: 5px; }
+
+#car:checked + label .smoke {
+  animation: smokeTrail 1.2s ease-out infinite;
+}
+
+@keyframes smokeTrail {
+  0% {
+    opacity: 0.8;
+    transform: translate(0, -50%) scale(0.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-20px, -100%) scale(1.5);
+  }
+}
+
+/* Add at the start of the file */
+:root {
+  --toggle-min-width: 280px;
+  --toggle-height: 25vh;
+  --grid-gap: 1rem;
+  --max-rows: 4;
+}
+
+body {
+  margin: 0;
+  padding: var(--grid-gap);
+  background: #2e394d;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow-x: hidden;
+}
+
+/* Main container for toggles */
+.toggles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--toggle-min-width), 1fr));
+  gap: var(--grid-gap);
+  max-height: calc(var(--toggle-height) * var(--max-rows) + (var(--grid-gap) * (var(--max-rows) - 1)));
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* Scrollbar styling */
+.toggles-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.toggles-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toggles-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* Toggle wrapper updates */
+.toggle-wrapper {
+  min-height: var(--toggle-height);
+  height: var(--toggle-height);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile enhancements */
+@media (max-width: 768px) {
+  :root {
+    --toggle-height: 33vh;
+    --max-rows: 3;
+  }
+
+  .toggles-container {
+    scroll-snap-type: y mandatory;
+    padding: 0.25rem;
+  }
+
+  .toggle-wrapper {
+    scroll-snap-align: start;
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --toggle-min-width: 240px;
+    --toggle-height: 40vh;
+    --max-rows: 2;
+  }
+
+  .toggles-container {
+    gap: 0.5rem;
+  }
+}
+
+/* Add touch slider indicator for mobile */
+.toggles-container::after {
+  content: '';
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .toggles-container:not(:last-child)::after {
+    opacity: 1;
+  }
+}
+
+/* Footer adjustments */
+.footer {
+  margin-top: var(--grid-gap);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #1f1f1f;
+  border-radius: 0.5rem;
+}
+
+/* Add smooth reveal animation for cards */
+.toggle-wrapper {
+  animation: revealCard 0.5s ease backwards;
+}
+
+@keyframes revealCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the reveal animations */
+.toggle-wrapper:nth-child(1) { animation-delay: 0.1s; }
+.toggle-wrapper:nth-child(2) { animation-delay: 0.2s; }
+.toggle-wrapper:nth-child(3) { animation-delay: 0.3s; }
+.toggle-wrapper:nth-child(4) { animation-delay: 0.4s; }
+.toggle-wrapper:nth-child(5) { animation-delay: 0.5s; }
+.toggle-wrapper:nth-child(6) { animation-delay: 0.6s; }
+/* ... continue for other cards */
+
+/* Enhanced Flip Toggle */
+.flip-toggle {
+  background: linear-gradient(135deg, 
+    #8eaecf 0%, 
+    #7e9ebf 20%, 
+    #6e8eaf 50%, 
+    #5e7e9f 80%, 
+    #4e6e8f 100%
+  ) !important;
+  position: relative;
+}
+
+.flip-rail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-rail .skater {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 60px);
+  transform: translateY(0);
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.flip-rail .board {
+  width: 40px;
+  height: 8px;
+  background: linear-gradient(90deg, #f4a460, #d2691e);
+  border-radius: 4px;
+  position: absolute;
+  bottom: -4px;
+  left: -5px;
+  transform-origin: center;
+  transition: transform 0.4s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.flip-rail .board::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgba(0,0,0,0.2);
+  top: 3px;
+  border-radius: 1px;
+}
+
+/* Enhanced flip animation */
+@keyframes skaterFlip {
+  0% { 
+    transform: translate(0, 0); 
+  }
+  20% { 
+    transform: translate(20px, -30px) rotate(90deg); 
+  }
+  40% { 
+    transform: translate(40px, -40px) rotate(180deg); 
+  }
+  60% { 
+    transform: translate(60px, -30px) rotate(270deg); 
+  }
+  80% { 
+    transform: translate(80px, -15px) rotate(360deg); 
+  }
+  100% { 
+    transform: translate(90px, 0) rotate(360deg); 
+  }
+}
+
+@keyframes boardFlip {
+  0% { 
+    transform: rotate(0) translateY(0); 
+  }
+  25% { 
+    transform: rotate(360deg) translateY(-15px); 
+  }
+  50% { 
+    transform: rotate(720deg) translateY(-20px); 
+  }
+  75% { 
+    transform: rotate(1080deg) translateY(-15px); 
+  }
+  100% { 
+    transform: rotate(1440deg) translateY(0); 
+  }
+}
+
+#flip:checked + label .skater {
+  animation: skaterFlip 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+#flip:checked + label .board {
+  animation: boardFlip 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards;
+}
+
+/* Trick trail effect */
+.flip-rail .skater::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#flip:checked + label .skater::after {
+  transform: scale(2);
+  opacity: 1;
+  animation: fadeTrail 1.2s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .name {
+    position: relative;
+    top: auto;
+    margin: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: none;
+  }
+
+  .flip-rail .skater {
+    left: calc(50% - 45px);
+  }
+
+  @keyframes skaterFlip {
+    0% { 
+      transform: translate(0, 0); 
+    }
+    20% { 
+      transform: translate(15px, -25px) rotate(90deg); 
+    }
+    40% { 
+      transform: translate(30px, -35px) rotate(180deg); 
+    }
+    60% { 
+      transform: translate(45px, -25px) rotate(270deg); 
+    }
+    80% { 
+      transform: translate(60px, -10px) rotate(360deg); 
+    }
+    100% { 
+      transform: translate(90px, 0) rotate(360deg); 
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 11px;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem;
+    opacity: 0.8;
+  }
+
+  .flip-rail .skater {
+    left: calc(50% - 35px);
+  }
+
+  @keyframes skaterFlip {
+    0% { 
+      transform: translate(0, 0); 
+    }
+    20% { 
+      transform: translate(10px, -20px) rotate(90deg); 
+    }
+    40% { 
+      transform: translate(25px, -30px) rotate(180deg); 
+    }
+    60% { 
+      transform: translate(35px, -20px) rotate(270deg); 
+    }
+    80% { 
+      transform: translate(45px, -10px) rotate(360deg); 
+    }
+    100% { 
+      transform: translate(70px, 0) rotate(360deg); 
+    }
+  }
+}
+
+/* Hover effects */
+.name:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Fix flip animation landing position */
+@keyframes skaterFlip {
+  0% { 
+    transform: translate(0, 0); 
+  }
+  20% { 
+    transform: translate(20px, -30px) rotate(90deg); 
+  }
+  40% { 
+    transform: translate(40px, -40px) rotate(180deg); 
+  }
+  60% { 
+    transform: translate(60px, -30px) rotate(270deg); 
+  }
+  80% { 
+    transform: translate(80px, -15px) rotate(360deg); 
+  }
+  100% { 
+    transform: translate(90px, 0) rotate(360deg); 
+  }
+}
+
+
+
+/* Time-Lapse Sunrise Toggle */
+.sunrise-toggle {
+  background: linear-gradient(135deg, 
+    #1a1f3c 0%, 
+    #1f2344 20%, 
+    #2b2d4a 50%, 
+    #2f3151 80%, 
+    #373960 100%
+  ) !important;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+.sunrise label.toggle-item {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sunrise .sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Stars */
+.sunrise .stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 70px 30px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 50px, #fff, rgba(0,0,0,0));
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Sun */
+.sunrise .sun {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #ffd700;
+  border-radius: 50%;
+  left: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 20px #ff8f00;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Clouds */
+.sunrise .cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sunrise .cloud-1 {
+  width: 30px;
+  height: 8px;
+  top: 30%;
+  left: 30%;
+}
+
+.sunrise .cloud-2 {
+  width: 20px;
+  height: 6px;
+  top: 60%;
+  left: 60%;
+}
+
+/* Toggle States */
+#sunrise:checked + label {
+  background: transparent;
+}
+
+#sunrise:checked + label .sky {
+  background: linear-gradient(to right,
+    #1a1f3c 0%,
+    #ff8c42 30%,
+    #ffb88c 60%,
+    #87ceeb 100%
+  );
+}
+
+#sunrise:checked + label .stars {
+  opacity: 0;
+}
+
+#sunrise:checked + label .sun {
+  transform: translate(60px, -50%);
+  background: #fff;
+  box-shadow: 
+    0 0 30px #ff8f00,
+    0 0 60px #ff6f00;
+}
+
+#sunrise:checked + label .cloud {
+  opacity: 0.8;
+}
+
+#sunrise:checked + label .cloud-1 {
+  transform: translateX(20px);
+}
+
+#sunrise:checked + label .cloud-2 {
+  transform: translateX(-15px);
+}
+
+/* Section Background Transition */
+#sunrise:checked ~ .sunrise-toggle {
+  background: linear-gradient(135deg,
+    #87ceeb 0%,
+    #ffb88c 30%,
+    #ff8c42 60%,
+    #87ceeb 100%
+  ) !important;
+}
+
+/* Add glow effect */
+.sunrise .sun::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle at center,
+    rgba(255, 215, 0, 0.4) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Sunrise Animation */
+@keyframes sunRays {
+  0%, 100% {
+    box-shadow: 
+      0 0 30px #ff8f00,
+      0 0 60px #ff6f00;
+  }
+  50% {
+    box-shadow: 
+      0 0 40px #ff8f00,
+      0 0 80px #ff6f00;
+  }
+}
+
+#sunrise:checked + label .sun {
+  animation: sunRays 3s ease-in-out infinite;
+}
+
+/* Star Twinkling */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.sunrise .stars {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+/* Cloud Movement */
+@keyframes floatCloud {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.sunrise .cloud {
+  animation: floatCloud 5s ease-in-out infinite;
+}
+
+/* Override default toggle circle for sunrise */
+.sunrise label.toggle-item:before {
+  display: none;
+}
+
+/* Ensure toggle bar is clean */
+.sunrise label.toggle-item {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Override default toggle circle for slinky */
+.slinky label.toggle-item:before {
+  display: none;
+}
+
+/* Ensure toggle bar is clean */
+.slinky label.toggle-item {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Override default toggle circle for flips */
+.flip-rail label.toggle-item:before {
+  display: none;
+}
+
+/* Ensure toggle bar is clean */
+.flip-rail label.toggle-item {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}

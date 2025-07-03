@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggles</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-s+KCMkIlt2ZTD9G3XRd3kk5UKeq1NHuS9Axq5Tz8i+RWQfquBsncM+gGNgKaLZyBNx7NU3eYwBEFLsA6MNU3Jw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <!-- ✅ Use Simple Line Icons ONLY if needed elsewhere -->
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'> -->
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="toggles-container">
+  <!-- Original toggles wrapped in container -->
+  <div class="toggle-wrapper">
+    <div class="toggle normal">
+      <input id="normal" type="checkbox"/>
+      <label class="toggle-item" for="normal"></label>
+    </div>
+    <div class="name">Normal</div>
+  </div>
+  
+  <div class="toggle-wrapper">
+    <div class="toggle transparent">
+      <input id="transparent" type="checkbox"/>
+      <label class="toggle-item" for="transparent"></label>
+    </div>
+    <div class="name">Transparent</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle checkcross">
+      <input id="checkcross" type="checkbox"/>
+      <label class="toggle-item" for="checkcross">
+        <div class="check"></div>
+      </label>
+    </div>
+    <div class="name">Yes & No</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle">
+      <input id="gravity" type="checkbox"/>
+      <label class="toggle-item" for="gravity"></label>
+    </div>
+    <div class="name">Gravity</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle pancake-stack">
+      <input id="pancake" type="checkbox"/>
+      <label class="toggle-item" for="pancake">
+        <div class="pancakes">
+          <div class="pancake"></div>
+          <div class="pancake"></div>
+          <div class="pancake"></div>
+          <div class="butter"></div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Pancake Stacks</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle dog-rollover">
+      <input id="doggo" type="checkbox"/>
+      <label class="toggle-item" for="doggo">
+        <div class="dog">
+          <div class="ear"></div>
+          <div class="ear right"></div>
+          <div class="face">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Doggo Wants a Treat</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle basketball-hoop">
+      <input id="hoop" type="checkbox"/>
+      <label class="toggle-item" for="hoop">
+        <div class="ball__wrapper">
+          <div class="ball"></div>
+        </div>
+        <div class="hoop"></div>
+      </label>
+    </div>
+    <div class="name">Kobe Bryant Tribute</div>
+  </div>
+
+  <div class="toggle-wrapper">
+    <div class="toggle beer-pong">
+      <input id="beer-pong" type="checkbox"/>
+      <label class="toggle-item" for="beer-pong"></label>
+      <div class="cup">
+        <div class="lid"></div>
+      </div>
+    </div>
+    <div class="name">Beer Pong</div>
+  </div>
+
+  <!-- 🌟 Light Bulb Toggle -->
+  <div class="toggle-wrapper">
+    <div class="toggle light-bulb">
+      <input id="lightbulb" type="checkbox" />
+      <label class="toggle-item" for="lightbulb">
+        <div class="bulb"></div>
+        <div class="glow"></div>
+      </label>
+    </div>
+    <div class="name">Light Bulb</div>
+  </div>
+
+  <!-- 🌊 Wave Switch -->
+  <div class="toggle-wrapper">
+    <div class="toggle wave-switch">
+      <input id="wave" type="checkbox" />
+      <label class="toggle-item" for="wave">
+        <div class="wave"></div>
+        <div class="bubble"></div>
+      </label>
+    </div>
+    <div class="name">Wave Switch</div>
+  </div>
+
+  <!-- 🚗 Car Slide -->
+  <div class="toggle-wrapper">
+    <div class="toggle car-slide">
+      <input id="car" type="checkbox" />
+      <label class="toggle-item" for="car">
+        <div class="road"></div>
+        <div class="car">
+          <div class="smoke"></div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Car Slide</div>
+  </div>
+
+  <!-- 🛹 Skater Toggle -->
+  <div class="toggle-wrapper flip-toggle">
+    <div class="toggle flip-rail">
+      <input id="flip" type="checkbox" />
+      <label class="toggle-item" for="flip">
+        <div class="skater">
+          <div class="board"></div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Flips</div>
+  </div>
+
+  <!-- 🎨 Paint Toggle -->
+  <div class="toggle-wrapper slinky-toggle">
+    <div class="toggle slinky">
+      <input id="slinky" type="checkbox" />
+      <label class="toggle-item" for="slinky">
+        <div class="slinky-wrapper">
+          <div class="slinky-body">
+            <div class="coil coil-1"></div>
+            <div class="coil coil-2"></div>
+            <div class="coil coil-3"></div>
+            <div class="coil coil-4"></div>
+            <div class="coil coil-5"></div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Slinky Spring</div>
+  </div>
+
+  <!-- 💃 Emoji Parade Toggle -->
+  <div class="toggle-wrapper parade-toggle">
+    <div class="toggle parade">
+      <input id="parade" type="checkbox" />
+      <label class="toggle-item" for="parade">
+        <div class="emoji-line">
+          <div class="emoji cool">😎</div>
+          <div class="emoji dancer">💃</div>
+          <div class="emoji groove">🕺</div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Conga Line</div>
+  </div>
+
+  <!-- 🌌 Sunrise Toggle -->
+  <div class="toggle-wrapper sunrise-toggle">
+    <div class="toggle sunrise">
+      <input id="sunrise" type="checkbox" />
+      <label class="toggle-item" for="sunrise">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="sun"></div>
+          <div class="clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="name">Time-Lapse Sunrise</div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="https://github.com/hemathens" target="_blank" class="social-btn github">GitHub</a>
+  <a href="https://www.linkedin.com/in/hem-patel19" target="_blank" class="social-btn linkedin">LinkedIn</a>
+  <a href="https://www.kaggle.com/hemajitpatel" target="_blank" class="social-btn kaggle">Kaggle</a>
+</footer>
+
+</body>
+</html>

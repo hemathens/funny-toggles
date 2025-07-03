@@ -62,8 +62,6 @@ funny-toggles/
 ├── css/
 │   ├── style.css        # All toggle & layout styling
 │   └── animations.css   # Keyframe definitions and variables
-├── js/
-│   └── main.js          # Scroll, lazy-load, and interactivity logic
 ├── assets/              # SVGs, sprites, and demo gif
 └── README.md            # This file
 ```
@@ -131,4 +129,4 @@ Please follow the established code style and include clear documentation for any
 
 ---
 
-> Crafted with ❤️ by Hemajit Patel (hemathens) to delight and inspire. Enjoy toggling!
+> Crafted with ❤️ by Hem Ajit Patel to delight and inspire. Enjoy toggling!

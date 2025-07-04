@@ -6,7 +6,7 @@
 
 # Funny Toggles Showcase
 
-A playful, interactive collection of 15 uniquely animated CSS/JavaScript toggles, each with its own character and theme. Explore a world of quirky, flabbergasting toggle animations—from black hole warps and disco balls to jellyfish drifts and ninja flips—all in one scrolling ribbon!
+A playful, interactive collection of 15 uniquely animated CSS/JavaScript toggles, each with its own character and theme. Explore a world of quirky, flabbergasting toggle animations—from black hole warps and to basketball and flips—all in one scrolling ribbon!
 
 ![Fun Toggle Ribbon](./screenshot.gif)
 
